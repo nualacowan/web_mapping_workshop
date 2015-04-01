@@ -22,7 +22,7 @@ featureLayer.on('ready', function(){
     'weight':4,
     'opacity': .7
   });
-  map.fitBounds(featureLayer.gitBounds());
+  map.fitBounds(featureLayer.getBounds());
 });
 
 featureLayer.on('ready', function(){
