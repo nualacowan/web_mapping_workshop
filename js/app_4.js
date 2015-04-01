@@ -14,7 +14,7 @@ map.setView([39, -96], 4);
 ///////////////////////////////////////////////////////////////////////////
 // This is the area we're going to use to add data to our map
 
-var dataFileToAdd = 'data/bike_routes.geojson'; //<- Point this to the file that you want to include on the map
+var dataFileToAdd = 'data/nuala_dc_parks'; //<- Point this to the file that you want to include on the map
 
 var featureLayer = L.mapbox.featureLayer()
     .loadURL(dataFileToAdd)
@@ -58,7 +58,7 @@ var clickHandler = function(e){
   $('#info').fadeIn(400,function(){
     var info = '';
 
-    info = '<div>Sweet bike route named ' + feature.properties.name + '</div>';
+    info = '<div>Sweet bike route named ' + feature.properties.NAME + '</div>';
 
     $('#info').append(info);
   });
